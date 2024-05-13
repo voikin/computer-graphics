@@ -1,0 +1,6 @@
+﻿  sem-1.cpp
+C:\Users\woyse\computer-graphics\sem-1\sem-1.cpp(28,12): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\woyse\computer-graphics\sem-1\sem-1.cpp(30,12): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\woyse\computer-graphics\sem-1\sem-1.cpp(32,12): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\woyse\computer-graphics\sem-1\sem-1.cpp(49,11): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  sem-1.vcxproj -> C:\Users\woyse\computer-graphics\sem-1\ARM64\Debug\sem-1.exe
