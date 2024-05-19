@@ -60,7 +60,7 @@ def transform_point(x, y, matrix):
     return int(transformed_point[0]), int(transformed_point[1])
 
 # Отрисовка фигуры с применением аффинных преобразований
-def draw_figure(x, y, scale, angle, pivot):
+def draw_figure(buffer, x, y, scale, angle, pivot):
     # Поворотная матрица
     rad = math.radians(angle)
     cos_theta = math.cos(rad)
@@ -91,7 +91,7 @@ def draw_figure(x, y, scale, angle, pivot):
 
     for point in all_points:
         transformed_point = transform_point(point[0], point[1], transform_matrix)
-        screen.set_at(transformed_point, black)
+        buffer.set_at(transformed_point, black)
 
 # Основной цикл программы
 running = True
@@ -101,8 +101,11 @@ angle = 0
 x, y = 200, 200
 pivot = (50, 100)
 
+# Создание буфера для рисования
+buffer = pygame.Surface((width, height))
+
 while running:
-    screen.fill(white)
+    buffer.fill(white)
     
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -116,7 +119,8 @@ while running:
             elif event.button == 3:  # ПКМ
                 mode = 'scale' if mode == 'rotate' else 'rotate'
     
-    draw_figure(x, y, scale, angle, pivot)
+    draw_figure(buffer, x, y, scale, angle, pivot)
+    screen.blit(buffer, (0, 0))
     pygame.display.flip()
     pygame.time.delay(100)
 
