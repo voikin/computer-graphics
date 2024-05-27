@@ -1,1 +1,3 @@
 .vs
+.venv
+.DS_Store
