@@ -1,0 +1,6 @@
+﻿  task.cpp
+C:\Users\woyse\computer-graphics\sem-13-14\task\task.cpp(163,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\woyse\computer-graphics\sem-13-14\task\task.cpp(164,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+task.obj : error LNK2019: unresolved external symbol D3DXCreateTextureFromFileW referenced in function "__int64 __cdecl WndProc(struct HWND__ *,unsigned int,unsigned __int64,__int64)" (?WndProc@@YA_JPEAUHWND__@@I_K_J@Z)
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3dx9.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'ARM64'
+C:\Users\woyse\computer-graphics\sem-13-14\task\ARM64\Debug\task.exe : fatal error LNK1120: 1 unresolved externals
